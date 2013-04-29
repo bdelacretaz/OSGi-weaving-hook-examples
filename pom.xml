@@ -39,6 +39,7 @@
                         <Bundle-Version>${project.version}</Bundle-Version>
                         <Private-Package>ch.x42.osgi.weavinghook.*</Private-Package>
                         <Bundle-Activator>ch.x42.osgi.weavinghook.Activator</Bundle-Activator>
+                        <Embed-Dependency>asm</Embed-Dependency>
                     </instructions>
                 </configuration>
             </plugin>
@@ -70,6 +71,12 @@
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>1.6.2</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.ow2.asm</groupId>
+            <artifactId>asm</artifactId>
+            <version>4.1</version>
             <scope>provided</scope>
         </dependency>
      </dependencies>

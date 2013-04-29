@@ -17,7 +17,8 @@ public class Activator implements BundleActivator {
     
     @Override
     public void start(BundleContext context) throws Exception {
-        addHook(context, new WeaveCallLoggingHook());
+        //addHook(context, new WeaveCallLoggingHook());
+        addHook(context, new LogMethodCallsHook());
     }
 
     @Override
